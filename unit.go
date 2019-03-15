@@ -10,6 +10,7 @@ type Unit struct {
 	Grad float64 // gradient at node
 }
 
+// String prints the value and gradient at a node in a neural network
 func (u Unit) String() string {
 	return fmt.Sprintf("{%.3g %.3g}", u.Val, u.Grad)
 }

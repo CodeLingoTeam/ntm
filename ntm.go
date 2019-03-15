@@ -283,6 +283,9 @@ type SGDMomentum struct {
 	PrevD []float64
 }
 
+// NewSDGMomentun creates a new instance of a stochastic gradient descent with momentum object with the
+// Controller object passed as an argument and a new slice as the PrevD with the length of the controllers
+// Weights Values
 func NewSGDMomentum(c Controller) *SGDMomentum {
 	s := SGDMomentum{
 		C:     c,
@@ -312,6 +315,7 @@ type RMSProp struct {
 	D []float64
 }
 
+// NewRMSProp creates a new instance of the rmsprop algorithm based on the controller given as an argumwnt
 func NewRMSProp(c Controller) *RMSProp {
 	r := RMSProp{
 		C: c,
