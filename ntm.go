@@ -315,7 +315,7 @@ type RMSProp struct {
 	D []float64
 }
 
-// NewRMSProp creates a new instance of the rmsprop algorithm based on the controller given as an argumwnt
+// NewRMSProp creates a new instance of the rmsprop algorithm based on the controller given as an argument
 func NewRMSProp(c Controller) *RMSProp {
 	r := RMSProp{
 		C: c,
